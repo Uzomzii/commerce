@@ -1,0 +1,1 @@
+web: gunicorn KK_7.wsgi
