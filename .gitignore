@@ -1,0 +1,4 @@
+local_settings.py
+secret_key.txt
+products/
+db.sqlite3

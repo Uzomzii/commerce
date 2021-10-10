@@ -1,0 +1,18 @@
+.card-text{
+    color: green;
+    font-weight: 800;
+}
+
+.card-title{
+    font-weight: 900;
+}
+
+.post-title{
+    font-family: 'Yeseva One', cursive;
+    font-size: 40px;
+}
+
+.post-body{
+    font-family: 'Neuton', serif;
+    font-size: 30px;
+}

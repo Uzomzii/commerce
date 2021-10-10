@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+  <!-- story section -->
+{% block content %}
+  <div class="layout_padding">
+
+    <section class="layout_padding story_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-md-6">
+            <div>
+              <img class="img-fluid" src="{% static 'images/security.jpg' %}" alt="" />
+            </div>
+          </div>
+          <div class=" col-md-6">
+            <div class="story_detail">
+              {% for post in object_list %}
+                <div class="post-entry">
+                  <h2 class="post-title"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+                  <p>{{post.date}}</p>
+                </div>
+              {% endfor %}
+              <div class="story_detail-btn">
+                <a href="#">
+                  <span>
+                    Read More
+                  </span>
+                  <img src="{% static 'images/arrow-black.png' %}" alt="" class="ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- end story section -->
+
+{% endblock content %}

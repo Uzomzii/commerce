@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>KK-7 SECURITY & SAFETY LTD</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" />
+</head>
+
+<body>
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <div class="logo_box">
+            <img src="{% static 'images/logo.png' %}" alt="" />
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--              <a class="nav-link" href="#">Login </a>-->
+<!--            </li>-->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control nav_search-input mr-sm-2 d-none" type="search" placeholder="Search"
+              aria-label="Search" value="" />
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- slider section -->
+
+
+  <!-- end slider section -->
+
+  <!-- welcome section -->
+  <section class="welcome_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-md-6">
+          <div>
+            <img class="img-fluid" src="{% static 'images/welcome.jpg' %}" alt="" />
+          </div>
+        </div>
+        <div class=" col-md-6">
+          <div class="welcome_detail">
+            <h3>
+              VISION
+            </h3>
+
+            <p>
+              Our vision is to provide security to industry, commerce, institutions,
+              very important personalities (VIPs), housing estates, neighbourhoods and other
+              clients throughout Nigeria and West Africa that is efficient and effective ultimately
+              leaving behind a security culture among our clients thereby contributing eventually to minimizing
+              pressure on the national security agencies which could have arisen from tje sub-sectors
+              served by us.
+            </p>
+            <h3>
+              MISSION
+            </h3>
+
+            <p>
+             Our mission is to deny material and human losses arising from criminal activities
+              while promoting friendly environment thereby adding value to the overall  activities and
+              network of client.
+            </p>
+            <h3>
+              STRATEGY
+            </h3>
+            <p>
+              Our strategy includes;
+              <ol>
+                <li>Professional vetting of our various level of security operatives/ guards, supervisors and officers</li>
+                <li>Training and retraining of all categories of security operatives and staff</li>
+                <li>Deployment of quality security personnel</li>
+                <li>Police back-up</li>
+                <li>Daily events reporting by field personnel</li>
+                <li>Daily functional response to the feedback</li>
+              </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end welcome section -->
+
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4 info_detail">
+          <div>
+            <p>
+              Our operational philosophy includes; <br>
+              <ol>
+              <li>Proactive and preventive security</li>
+              <li>Customized security management services</li>
+              <li>Integrated security solutions</li>
+            </ol>
+            </p>
+
+          </div>
+        </div>
+        <div class=" col-md-4 address_container">
+          <div>
+            <h3>
+              Address:
+            </h3>
+            <div class="address_link-container">
+              <a href="">
+                <img src="{% static 'images/phone.png' %}" alt="">
+                <span> Tel: +234 803 596 6872
+                </span>
+              </a>
+              <a href="">
+                <img src="{% static 'images/mail.png' %}" alt="">
+                <span>
+                  Email: contactkk7ng@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 news_container">
+          <div>
+            <div class="social_container">
+              <div>
+                <a href="https://www.facebook.com/KK-7-Security-and-Safety-Limited-1396790147216480/"><img src="{% static 'images/fb.png' %}" alt=""></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/company/kk-7-security-and-safety-limited/"><img src="{% static 'images/linkedin.png' %}" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 1993 - 2021 KK-7 SECURITY & SAFETY LTD. | All Rights Reserved
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+
+  <script>
+    $(".nav_search-btn").click(function () {
+      if ($(".nav_search-input").hasClass("d-none")) {
+        event.preventDefault();
+        $(".nav_search-input")
+          .animate({
+              left: "-1000px"
+            },
+            "1000000"
+          )
+          .removeClass("d-none");
+      } else {
+        $(".nav_search-input")
+          .animate({
+              left: "0px"
+            },
+            "1000000"
+          )
+          .addClass("d-none");
+      }
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>

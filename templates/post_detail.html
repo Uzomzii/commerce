@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <head>
+    <link rel="stylesheet" href="{% static 'css/lists.css' %}">
+  </head>
+   <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4 post-title">{{ post.title }}</h1>
+      <p class="post-body">{{ post.body }}</p>
+    </div>
+  </div>
+
+{% endblock content %}
